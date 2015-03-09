@@ -16,6 +16,7 @@
 	transition: background-position 1s ease-out 0.3s;
 */
 	width: 100%;
+	margin: 0px 30px;
 	min-width: 520px;
 	height: 400px;
 	position: relative;
