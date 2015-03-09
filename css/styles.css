@@ -141,26 +141,32 @@ margin: 4px;
     border-radius: 0;
     top: 0px;
     border-bottom: 1px solid rgb(0, 100, 150);
+    margin: 0px auto;
+}
+
+.header .container {
+	padding: 5px 0px;
 }
 
 .navbar-inverse .navbar-toggle {
-    border-color: #46cc46;
-    background-color: #46cc46;
+    border-color: #fff;
+    background-color: #fff;
 }
+.navbar-inverse .navbar-toggle .icon-bar {
+    color: rgb(0, 100, 150);
+}
+
 .header .navbar {
 margin: 0;
 background: transparent !important;
 }
-    .navbar-inverse .navbar-toggle .icon-bar {
-        /*background-color: #46cc46;*/;
-    }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: #46cc46;
+        background: #fff;
     }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #46cc46;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-toggle:hover .icon-bar {
@@ -182,7 +188,7 @@ background: none;
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
-    border-bottom: 14px solid #46cc46;
+    border-bottom: 14px solid rgb(0, 100, 150);
 }
 
 .carousel-inner > .item {
@@ -214,7 +220,7 @@ background: none;
 
 .actionPanel {
     padding: 25px 0;
-    background: #46cc46;
+    background: rgb(0, 100, 150);
 }
 
     .actionPanel h3 {
@@ -222,7 +228,7 @@ background: none;
     }
 
 .circle {
-    background: #46cc46;
+    background: rgb(0, 100, 150);
     height: 60px;
     width: 60px;
     border-radius: 35px;
@@ -232,7 +238,7 @@ background: none;
 /*----Nav ----*/
 .header .navbar-brand {
     float: left;
-    padding: 16px 15px;
+    padding: 18px 0px;
     line-height: 18px;
     height: 50px;
     /*color:#46cc46;*/
@@ -247,9 +253,11 @@ background: none;
 }
 
 .logo {
+	position: relative;
+	z-index: 5;
     font-size: 2.2em;
     text-shadow: none;
-    margin: 8px 0 0 0;
+    margin: 8px 8px;
 }
 
     .logo:hover {
@@ -282,6 +290,7 @@ background: none;
 
 .header .navbar-nav > li > a {
     padding: 25px 18px;
+    /*padding: 15px 8px;*/
     text-transform: uppercase;
 }
 
@@ -327,22 +336,23 @@ background: none;
 .banner-container {
     width: 100%;
     position: relative;
-    padding: 0px;
+    padding: 80px 0px 30px 0px;
     box-shadow: 0px 0px 0px rgba(0,0,0,0);
     /*box-shadow: 0px 0px 1px rgba(0,0,0,0.4);*/
     /*background: url("../images/banner-bg.jpg") no-repeat;*/
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
     background-size: cover;
-    margin-top: 60px;
-    position: relative;
+    margin-top: 40px;
+    background: #fff;
 }
 
     .banner-container > img {
-        width: 100%;
+        width: 90%;
     }
 
 .banner-content {
     position: absolute;
+    padding: 90px 20px;
     z-index: 3;
     top: 0px;
     left: 0px;
@@ -353,21 +363,22 @@ background: none;
         color: #000000;
         font-weight: normal;
         font-family: 'Source Sans Pro', sans-serif;        
-        font-size: 3.5em;
+        font-size: 3.1em;
         margin: 2% 0 30px;
         line-height: 1.2em;
     }
 
     .banner-content p {
-        font-size: 1.8em;
+        font-size: 1.7em;
         font-family: 'Source Sans Pro', sans-serif;        
         font-weight: normal;
         font-style: normal;
         color: #000000;
+        width: 450px;
     }
 
 .da-slider {
-    margin: 0 auto !important;
+    margin: 10 auto !important;
 }
 
 .sub-heading {
@@ -395,7 +406,7 @@ background: none;
     }
 
 .pdingBtm30 {
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
 .da-arrows span:after {
@@ -420,7 +431,7 @@ background: none;
 	height: 12px;
 	border-radius: 50%;
 	background: #D3D3D3;
-	margin: 3px;
+	margin: 5px;
 	cursor: pointer;
 	box-shadow: 
 		1px 1px 1px rgba(0,0,0,0.1) inset, 
@@ -429,12 +440,12 @@ background: none;
 
 
 .secPad{
-    padding:10px 0;
+    padding:50px 0;
 }
 
 /*Intro Content*/
 #aboutMe {
-padding:20px 100px;
+padding: 140px 0px;
 padding-bottom:100px;
 background:#D3D3D3;
 }
@@ -447,8 +458,8 @@ background:#D3D3D3;
 }
 
 #aboutUs {
-padding:30px 80px;
-padding-bottom:200px;
+padding:30px 0px;
+padding-bottom:100px;
 background:#fff;
 }
 
