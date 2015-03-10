@@ -185,6 +185,7 @@ background: none;
 }   
 .navbar-toggle {
 }
+
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
@@ -337,7 +338,7 @@ background: none;
     width: 100%;
     height: 700px;
     position: relative;
-    padding: 100px 0px 200px 0px;
+    padding: 100px 20px 200px 20px;
     box-shadow: 0px 0px 0px rgba(0,0,0,0);
     /*box-shadow: 0px 0px 1px rgba(0,0,0,0.4);*/
     /*background: url("../images/banner-bg.jpg") no-repeat;*/
@@ -347,21 +348,25 @@ background: none;
     background: #fff;
 }
 
-.banner-container > img {
+/*.banner-container > img {
 	position: relative;
-	width: 100%;
-	padding: 50px 80px;
 }
-	
+*/	
 #bgimg {
-	padding-top: 30px;
+	padding: 20px 40px;
+	/*padding-top: 50px;*/
 	position: relative;
-	width: 100%;
+	/*width: 50%;*/
+	/*height: 100%;*/
+	width: 90%;
+	height: 550px;
+	float: right;
 }
 	
 .banner-content {
     position: absolute;
-    width: 100%;
+    float: left;
+    width: 90%;
     height: 100%;
     padding: 120px 0px;
     z-index: 3;
@@ -378,7 +383,8 @@ background: none;
 	font-size: 3em;
 	margin: 2% 0 30px;
 	line-height: 1.2em;
-	min-height: 50;
+	min-height: 10;
+	width: 450px;
 }
 
 .banner-content p {
@@ -387,14 +393,21 @@ background: none;
 	font-weight: normal;
 	font-style: normal;
 	color: #000000;
-	width: 450px;
-	min-height: 150px;
+	/*width: 400px;*/
+	margin: 2% 0 30px;
+	min-height: 180px;
 }
 
 .da-slider {
     margin: 10 auto !important;
     padding: 30px;
 }
+.da-slide {
+	float: left;
+	padding: 50px 30px;
+	width: 75%;
+}
+
 
 
 .sub-heading {
