@@ -52,7 +52,7 @@
                         <li><a href="#aboutUs" class="scroll-link">Experience</a></li>
  <!--                        <li><a href="#experience" class="scroll-link">Experience</a></li>
   -->                       
-                        <li><a href="#skills" class="scroll-link">Skills</a></li>
+                        <li><a href="#skills" class="scroll-link">Projects</a></li>
                         <li><a href="#cv" class="scroll-link">CV</a></li>
                         <li><a href="#fifthmoment" class="scroll-link">E[X^5]</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact me</a></li>
@@ -180,12 +180,16 @@
         </div>
     </section>
  -->    
+ 
+ 
     <!--Skills-->
+<!--  
     <section id="skills" class="secPad white">
     	<div class="container">
         <div class="heading text-center">
-                <!-- Heading -->
-                <h2>My Skills</h2>
+
+                <!-- Heading
+                <h2>My Projects</h2>
                 <p></p>
             </div>
         	<div class="row">
@@ -315,6 +319,7 @@
             </div>
         </div>        
     </section>
+-->
     
     <!--Experience-->
 <!--     <section id="experience" class="secPad">
@@ -478,108 +483,131 @@
  <!- --> 
   
    <!--Portfolio-->
-<!--     <section id="portfolio" class="page-section section appear clearfix secPad">
+    <section id="skills" class="page-section section appear clearfix secPad">
         <div class="container">
 
             <div class="heading text-center">
- -->                <!-- Heading -->
- <!--                <h2>Portfolio</h2>
-                <p>Projects publications and internships</p>
+                 <!-- Heading -->
+                 <h2>Projects</h2>
+                <!-- <p>Ongoing work, publications, and software</p> -->
             </div>
 
             <div class="row">
                 <nav id="filter" class="col-md-12 text-center">
                     <ul>
                         <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".intern">Internships</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".projects">Ongoing Projects</a></li>
                         <li><a href="#" class="btn-theme btn-small" data-filter=".pubs">Publications</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".projects">Projects</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".software">Software</a></li>
                     </ul>
                 </nav>
                 <div class="col-md-12">
                     <div class="row">
                         <div class="portfolio-items isotopeWrapper clearfix" id="3">
 
-                            <article class="col-sm-4 isotopeItem intern">
+                            <article class="col-sm-4 isotopeItem software">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img1.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img1.jpg" class="fancybox">
-                                                <h5>GAANN fellow in scientific computation</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#recurse" class="fancybox">
+                                        		<h5>The Recurse Center, NYC</h5><i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	</div>
+                                        	<div style="display:none" id="recurse">
+                                        		<h4>I will be taking a leave from my postdoctoral research August 17, 2015 through November 5, 2015 to attend the 
+                                        		<a href="https://www.recurse.com/" target="_blank">Recurse Center</a> in New York City.
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
- -->
- <!--                            <article class="col-sm-4 isotopeItem intern">
+                                
+                             <article class="col-sm-4 isotopeItem projects software">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img2.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img2.jpg" class="fancybox">
-                                                <h5>SAMSI Graduate Research Fellow</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#ipw" class="fancybox"><h5>Inverse Probability Weighting for Addressing Confounding in Machine Learning and Neuroimaging</h5><i class="fa fa-arrows-alt fa-2x"></i>
+                                        	</a>
+                                        </div>
+                                        <div style="display:none" id="ipw">
+                                        	<h4>Example code implementing inverse probability weighting with SVMs can be found 
+                                        		<a href="https://github.com/kalinn/IPW-SVM" target="_blank"> here</a>. Please check back for a forthcoming paper soon. 
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
 
- -->
- <!--                            <article class="col-sm-4 isotopeItem intern">
+ 
+                              <article class="col-sm-4 isotopeItem software pubs">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img3.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img3.jpg" class="fancybox">
-                                                <h5>Consultant at Three Ships Media</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#iqLearnR" class="fancybox"><h5>iqLearn: Interactive Q-learning in R for Dynamic Treatment Regimes</h5><i class="fa fa-arrows-alt fa-2x"></i>
+                                        	</a>
+                                        </div>
+                                        <div style="display:none;" id="iqLearnR">
+                                        	<h4>An R package for implementing 
+                                        		<a href="http://biomet.oxfordjournals.org/content/101/4/831.abstract" target="_blank"> IQ-Learning</a> to estimate optimal dynamic treatment regimes from two-stage randomized trials. The corresponding Journal of Statistical Software paper can be found <a href="http://www.jstatsoft.org/v64/i01" target="_blank">here</a>. A newer R package for Dynamic Treatment Regimes is forthcoming; please check back here for details.
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
- -->
- <!--                            <article class="col-sm-4 isotopeItem pubs">
+
+
+ 
+                              <article class="col-sm-4 isotopeItem  pubs projects">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img4.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="http://www.stat.ncsu.edu/people/zhou/courses/st810/notes/linn_iqLearn.pdf" class="fancybox">
-                                                <h5>Interactive Q-learning. Biometrika</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#qiqLearn" class="fancybox"><h5> Interactive Q-learning for Probabilities and Quantiles</h5><i class="fa fa-arrows-alt fa-2x"></i>
+                                        	</a>
+                                        </div>
+                                        <div style="display:none;" id="qiqLearn">
+                                        	<h4>Methods for estimating dynamic treatment regimes that optimize threshold probabilities and quantiles of the response distribution. The manuscript is under review and can be found on arXiv <a href="http://arxiv.org/abs/1407.3414" target="_blank">here</a>.
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
- -->
- <!--                            <article class="col-sm-4 isotopeItem pubs">
+ 
+                             <article class="col-sm-4 isotopeItem  pubs">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img5.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="http://cran.r-project.org/web/packages/iqLearn/vignettes/iqLearn.pdf" class="fancybox">
-                                                <h5>iqLearn : Interactive Q-learning in R, Journal of statistical software</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#dtrbook" class="fancybox"><h5>Estimation of Dynamic Treatment Regimes for Complex Outcomes: 
+                                        		Balancing Benefits and Risks</h5><i class="fa fa-arrows-alt fa-2x"></i>
+                                        	</a>
+                                        </div>
+                                        <div style="display:none;" id="dtrbook">
+                                        	<h4>To appear as a chapter in a new textbook on Dynamic Treatment Regimes. Please check back soon for more details.
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
- -->
- <!--                            <article class="col-sm-4 isotopeItem pubs">
+                             
+                             <article class="col-sm-4 isotopeItem  projects">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img6.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
                                         <div class="folio-info">
-                                            <a href="images/portfolio/img6.jpg" class="fancybox">
-                                                <h5>Constrained Estimation for Competing Outcomes</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        	<a id="inline" href="#other" class="fancybox"><h5>Other Projects</h5><i class="fa fa-arrows-alt fa-2x"></i>
+                                        	</a>
+                                        </div>
+                                        <div style="display:none;" id="other">
+                                        	<h4>Please check back soon for more details.
+                                        	</h4>
                                         </div>
                                     </div>
                                 </div>
                             </article>
- -->
- <!--                            <article class="col-sm-4 isotopeItem projects">
+ <!--                           <article class="col-sm-4 isotopeItem projects">
                                 <div class="portfolio-item">
                                     <img src="images/portfolio/img7.jpg" alt="" />
                                     <div class="portfolio-desc align-center">
@@ -618,7 +646,7 @@
                                     </div>
                                 </div>
                             </article>
-
+-->
 
 
 
@@ -633,7 +661,7 @@
 
         </div>
     </section>
- -->
+
  
      <section id="cv">
         <div class="container">
@@ -771,14 +799,17 @@
                 <!--a href="#"><i class="fa fa-facebook"></i></a-->
                 <!--a href="#"><i class="fa fa-dribbble"></i></a-->
                 <!--a href="#"><i class="fa fa-flickr"></i></a-->
-                <!--a href="#"><i class="fa fa-github"></i></a-->
+                <a href="https://github.com/kalinn"><i class="fa fa-github"></i></a
             </div>
 
+<!--             <h6><div>Thanks to <a href="http://www.bilwaj.com/" target="_blank">Bilwaj Gaonkar</a> for help with this site.</div></h6>
+ -->            
             <div class="clear"></div>
             <!--CLEAR FLOATS-->
         </div>
     </footer>
     <!--/.page-section-->
+            <center><h7><div>Thanks to <a href="http://www.bilwaj.com/" target="_blank">Bilwaj Gaonkar</a> for help with this site.</div></h7></center>
     <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 
     <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->

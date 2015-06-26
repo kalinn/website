@@ -882,7 +882,8 @@ nav#filter {
 }
 
 .portfolio-item:hover .portfolio-desc {
-    padding-top: 20%;
+    /*padding-top: 20%;*/
+    text-align: center;
     height: 100%;
     transition: all 200ms ease-in-out 0s;
     opacity: 1;
@@ -909,6 +910,7 @@ nav#filter {
 }
 
 .portfolio-item:hover .folio-info {
+    text-align: center;
     height: 100%;
     opacity: 1;
     transition: all 500ms ease-in-out 0s;
@@ -919,7 +921,7 @@ nav#filter {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .portfolio-item .portfolio-desc .folio-info p {
