@@ -185,6 +185,7 @@ background: none;
 }   
 .navbar-toggle {
 }
+
 /*.carousel-inner*/
 #myCarousel {
     margin-top: 50px;
@@ -335,9 +336,9 @@ background: none;
 /*--- Banner ----*/
 .banner-container {
     width: 100%;
-    height: 1000px;
+    height: 700px;
     position: relative;
-    padding: 150px 0px;
+    padding: 100px 20px 200px 20px;
     box-shadow: 0px 0px 0px rgba(0,0,0,0);
     /*box-shadow: 0px 0px 1px rgba(0,0,0,0.4);*/
     /*background: url("../images/banner-bg.jpg") no-repeat;*/
@@ -347,16 +348,27 @@ background: none;
     background: #fff;
 }
 
-    .banner-container > img {
-        width: 100%;
-        padding: 50px 50px;
-    }
-
+/*.banner-container > img {
+	position: relative;
+}
+*/	
+#bgimg {
+	padding: 20px 40px;
+	/*padding-top: 50px;*/
+	position: relative;
+	/*width: 50%;*/
+	/*height: 100%;*/
+	width: 90%;
+	height: 550px;
+	float: right;
+}
+	
 .banner-content {
     position: absolute;
-    width: 100%;
+    float: left;
+    width: 90%;
     height: 100%;
-    padding: 100px 0px;
+    padding: 120px 0px;
     z-index: 3;
     top: 0px;
     left: 0px;
@@ -364,29 +376,38 @@ background: none;
     /*background: #fff;*/
 }
 
-    .banner-content h2 {
-        color: #000000;
-        font-weight: normal;
-        font-family: 'Source Sans Pro', sans-serif;        
-        font-size: 3em;
-        margin: 2% 0 30px;
-        line-height: 1.2em;
-    }
+.banner-content h2 {
+	color: #000000;
+	font-weight: normal;
+	font-family: 'Source Sans Pro', sans-serif;        
+	font-size: 3em;
+	margin: 2% 0 30px;
+	line-height: 1.2em;
+	min-height: 10;
+	width: 450px;
+}
 
-    .banner-content p {
-        font-size: 1.5em;
-        font-family: 'Source Sans Pro', sans-serif;        
-        font-weight: normal;
-        font-style: normal;
-        color: #000000;
-        width: 450px;
-        min-height: 150px;
-    }
+.banner-content p {
+	font-size: 1.7em;
+	font-family: 'Source Sans Pro', sans-serif;        
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	/*width: 400px;*/
+	margin: 2% 0 30px;
+	min-height: 180px;
+}
 
 .da-slider {
     margin: 10 auto !important;
     padding: 30px;
 }
+.da-slide {
+	float: left;
+	padding: 50px 30px;
+	width: 75%;
+}
+
 
 
 .sub-heading {
@@ -453,7 +474,7 @@ background: none;
 
 /*Intro Content*/
 #aboutMe {
-padding: 100px 0px;
+padding: 50px 0px;
 padding-bottom:100px;
 background:#D3D3D3;
 }
@@ -466,7 +487,7 @@ background:#D3D3D3;
 }
 
 #aboutUs {
-padding:30px 0px;
+padding:50px 0px;
 padding-bottom:100px;
 background:#fff;
 }
@@ -490,6 +511,7 @@ margin: 0px;
 
 #fifthmoment {
 background:rgb(0, 100, 150);
+padding-top: 50px;
 padding-bottom: 100px;
 color: #fff;
 }
@@ -529,7 +551,7 @@ color: #FDFDFD !important;
 
 /*Skills*/
 #skills {
-padding-bottom:50px;
+padding: 50px 0px;
 background:#D3D3D3;
 }
 .skilltitle {
@@ -860,7 +882,8 @@ nav#filter {
 }
 
 .portfolio-item:hover .portfolio-desc {
-    padding-top: 20%;
+    /*padding-top: 20%;*/
+    text-align: center;
     height: 100%;
     transition: all 200ms ease-in-out 0s;
     opacity: 1;
@@ -887,6 +910,7 @@ nav#filter {
 }
 
 .portfolio-item:hover .folio-info {
+    text-align: center;
     height: 100%;
     opacity: 1;
     transition: all 500ms ease-in-out 0s;
@@ -897,7 +921,7 @@ nav#filter {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .portfolio-item .portfolio-desc .folio-info p {
