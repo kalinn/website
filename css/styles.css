@@ -80,10 +80,11 @@ a {
     transition: all 0.4s linear;
 }
 
-    a:hover {
-        color: #27cddf;
-        text-decoration: none;
-    }
+a:hover {
+	color: #27cddf;
+	/*color: #fff;*/
+	text-decoration: none;
+}
 
 .btn {
     border: 0px;
@@ -140,12 +141,14 @@ margin: 4px;
     z-index: 50;
     border-radius: 0;
     top: 0px;
-    border-bottom: 1px solid rgb(0, 100, 150);
-    margin: 0px auto;
+    border-bottom: 0px solid rgb(0, 100, 150);
+    /*margin: 0px auto;*/
+    margin: 0px 0px 20px 0px;
+	padding: 0px 0px;
 }
 
 .header .container {
-	padding: 5px 0px;
+	padding: 0px 0px;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -161,9 +164,9 @@ margin: 0;
 background: transparent !important;
 }
 
-    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background: rgb(0, 100, 150);
-    }
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background: rgb(0, 100, 150);
+}
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #fff;
@@ -395,7 +398,7 @@ background: none;
 	color: #000000;
 	/*width: 400px;*/
 	margin: 2% 0 30px;
-	min-height: 180px;
+	min-height: 350px;
 }
 
 .da-slider {
@@ -829,21 +832,23 @@ nav#filter {
 }
 
     nav#filter li {
+    	background: #DCDCDC;
         display: inline-block;
         margin: 0 0 0 5px;
     }
 
     nav#filter a {
+    	/*background: #DCDCDC;*/
         padding: 4px 12px;
         line-height: 20px;
         border: 1px solid rgb(0, 100, 150);
-;
         text-decoration: none;
     }
 
 .current {
-    background: #46cc46;
-    color: #fff;
+    /*background: rgb(0, 100, 150);*/
+    background: #fff;
+    color: rgb(0, 100, 150);
 }
 
 .portfolio-items article img {
@@ -1067,6 +1072,33 @@ footer {
 }
 
 @media (min-width: 768px) {
+    .banner-container {
+        background-size: contain;
+    }
+
+    .team-member .member-img img {
+        max-width: 100%;
+    }
+
+    .da-slider {
+        height: 380px;
+        width: 100%;
+        min-width: initial;
+        margin: 0px !important;
+    }
+    .da-slide h2 {
+        font-size: 40px;
+        text-align: center;
+        width: initial;
+        top: 10px;
+    }
+
+    .da-slide p {
+        font-size: 25px;
+        width: 60%;
+        top: 75px;
+        height: 50px;
+    }
     .header .navbar-brand {
         padding-left: 0;
     }
@@ -1076,9 +1108,15 @@ footer {
     }
 
     .navbar-inverse .navbar-nav > li > a {  
-        padding: 5px 12px !important;
+        padding: 2px 10px !important;
+        /*padding: 5px 12px !important;*/
         border-radius: 5px;
-        margin: 19px 0px;
+        margin: 15px 0px;
+    }
+    .portfolio-item .portfolio-desc .folio-info h5 {
+        font-size: 12px;
+        text-align: center;
+        padding: 0px 0px;
     }
 }
 
@@ -1105,7 +1143,7 @@ footer {
     }
 
     .da-slide p {
-        width: 65%;
+        width: 60%;
         top: 65px;
         height: 50px;
     }
@@ -1123,6 +1161,7 @@ footer {
 
         .portfolio-item .portfolio-desc .folio-info h5 {
             font-size: 1em;
+            /*font-size: 10px;*/
         }
 
     .navbar-inverse .navbar-nav > li > a { 
@@ -1140,20 +1179,114 @@ footer {
 }
 
 @media (max-width:760px) {
+   .banner-container {
+        background-size: contain;
+    }
+
+    .banner-container #bgimg{
+        height: 350px;
+        width:  550px;
+        margin: 15px 0px 0 0px;
+    }
     .header .navbar-nav > li > a {
         padding: 7px 12px;
         font-size: 14px;
     }
 
+    .da-slider {
+        height: 380px;
+        width: 100%;
+        min-width: initial;
+        margin: 0px !important;
+    }
+
+    .da-slide h2 {
+        font-size: 28px;
+        text-align: center;
+        width: initial;
+        top: 10px;
+    }
+
+    .da-slide p {
+    	font-size: 18px;
+       width: 50%;
+        top: 55px;
+        height: 100px;
+    }
+
     .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
         border-color: #A8A8A8;
+    }
+ 
+    .portfolio-item .portfolio-desc .folio-info h5 {
+        font-size: 20px;
+        text-align: center;
+        padding: 25px 5px;
+    }
+}
+
+@media (max-width:640px) {
+   .banner-container {
+        background-size: contain;
+    }
+
+    .banner-container #bgimg{
+        height: 350px;
+        width:  450px;
+        margin: 15px 0px 0 0px;
+    }
+    .header .navbar-nav > li > a {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    .da-slider {
+        height: 380px;
+        width: 100%;
+        min-width: initial;
+        margin: 0px !important;
+    }
+
+    .da-slide h2 {
+        font-size: 28px;
+        text-align: center;
+        width: initial;
+        top: 10px;
+    }
+
+    .da-slide p {
+    	font-size: 18px;
+       width: 50%;
+        top: 55px;
+        height: 100px;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: #A8A8A8;
+    }
+ 
+    .portfolio-item .portfolio-desc .folio-info h5 {
+        font-size: 20px;
+        text-align: center;
+        padding: 25px 5px;
     }
 }
 
 @media (max-width: 480px) {
     .banner-container {
         background-size: contain;
-        margin-top: 67px;
+        /*height: 100%;*/
+        /*margin: 0px 0px;*/
+        /*margin-top: 67px;*/
+    }
+
+    .banner-container #bgimg{
+    	margin-top: 15px;
+        height: 300px;
+        width:  400px;
+        /*height: 100%;*/
+        /*margin: 0px 0px;*/
+        /*margin-top: 67px;*/
     }
 
     .navbar-inverse .navbar-nav > li > a {
@@ -1163,20 +1296,28 @@ footer {
     }
 
     .navbar-toggle {
-        margin: 17px;
+    	position: relative;
+    	float: right;
+    	padding: 10px 10px;
+    	margin-top: 15px;
+    	margin-bottom: 8px;
+    	border: 1px solid transparent;
+    	border-radius: 4px;
+        margin: 15px;
     }
 
     .da-slide h2 {
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         width: initial;
         top: 10px;
     }
 
     .da-slide p {
-        width: 65%;
-        top: 65px;
-        height: 50px;
+    	font-size: 16px;
+    	width: 50%;
+        top: 55px;
+        height: 150px;
     }
 
     .page-section h1 {
@@ -1184,26 +1325,37 @@ footer {
     }
 
     .page-section h2 {
-        font-size: 2em;
+        font-size: 40px;
     }
 
     .page-section p {
-        font-size: 1em;
+        font-size: .5em;
         margin: 0 0 20px;
     }
 
     .portfolio-item .portfolio-desc .folio-info h5 {
-        font-size: 11px;
+        font-size: 20px;
+        text-align: center;
+        padding: 25px 5px;
     }
 }
 
 @media (max-width: 320px) {
+   .banner-container {
+        background-size: contain;
+     }
+
+    .banner-container #bgimg{
+    	margin-top: 20px;
+        height: 200px;
+        width:  400px;
+    }
     .banner-container {
         background-size: contain;
     }
 
     .da-slider {
-        height: 300px;
+        height: 400px;
     }
 
     .da-slider {
