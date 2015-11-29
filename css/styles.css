@@ -21,6 +21,9 @@ body {
     background: #DCDCDC;
 }
 
+.container{
+	padding: 40px;
+}
 ::selection {
     color: #fff;
     background: #B0C4DE;
@@ -143,7 +146,7 @@ margin: 4px;
     top: 0px;
     border-bottom: 0px solid rgb(0, 100, 150);
     /*margin: 0px auto;*/
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 0px 0px;
 	padding: 0px 0px;
 }
 
